@@ -1,0 +1,38 @@
+/* @font-face {
+	font-family: 'Authentic-Sans-90-reg';
+	src: url('../fonts/AUTHENTICSans-90.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Authentic-Sans-90';
+	src: url('../fonts/AUTHENTICSans-Condensed-90.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Authentic-Sans-130';
+	src: url('../fonts/AUTHENTICSans-Condensed-130.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'op1';
+	src: url('../fonts/Asadera-regular.otf');
+}
+
+@font-face {
+	font-family: 'op2';
+	src: url('../fonts/AUTHENTICSans-60.otf');
+
+}
+
+
+@font-face {
+	font-family: 'op3';
+	src: url('../fonts/AUTHENTICSans-90.otf');
+
+}
