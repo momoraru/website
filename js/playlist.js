@@ -1,6 +1,6 @@
 let songs = [
 	{
-		name: 'sound excerpt longer',
+		name: 'Sound excerpt longer',
 		audio: 'sound-excerpt',
 	},
 ];

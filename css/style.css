@@ -149,7 +149,7 @@ img {
 /* BIO SUB PAGE MAIN */
 .grey {
 	color: var(--accent-color);
-	text-transform: uppercase;
+	
 	font-size: 12px;
 	margin: 1rem 0;
 	padding-top: 2px;
@@ -173,7 +173,7 @@ img {
 }
 
 .cv--year,
-.main__wrapper .screening--year {
+.main__wrapper .screening--year, .screening--year {
 	color: var(--text-color-secondary);
 }
 
@@ -228,6 +228,7 @@ img {
 h2 {
 	font-size: 1rem;
 	font-weight: 400;
+	color: var(--text-color-secondary);
 }
 
 .main__projects .project__content,
@@ -295,9 +296,9 @@ h2 {
 .music-titles {
 	display: flex;
 	flex-direction: row;
-	border-top: 1px solid var(--accent-color);
-	border-right: 1px solid var(--accent-color);
-	border-left: 1px solid var(--accent-color);
+	border-top: 1px solid var(--text-color);
+	border-right: 1px solid var(--text-color);
+	border-left: 1px solid var(--text-color);
 	margin: 0;
 	padding: 0 1rem;
 }
@@ -318,7 +319,7 @@ h2 {
 }
 
 .control-btn .play-pause:hover {
-	cursor: default;
+	cursor: pointer;
 	/* font-style: italic; */
 	color: var(--text-color-secondary);
 }
@@ -331,9 +332,9 @@ h2 {
 
 .progress-wrapper {
 	padding: 0 1rem 0.5rem 1rem;
-	border-bottom: 1px solid var(--accent-color);
-	border-right: 1px solid var(--accent-color);
-	border-left: 1px solid var(--accent-color);
+	border-bottom: 1px solid var(--text-color);
+	border-right: 1px solid var(--text-color);
+	border-left: 1px solid var(--text-color);
 }
 
 .progress-details {
@@ -359,6 +360,7 @@ h2 {
 	align-items: center;
 	padding: 0.5rem 0;
 	font-size: 12px;
+	color: var(--text-color-secondary);
 }
 
 /* FOOTNOTES */
@@ -381,6 +383,7 @@ h2 {
 	margin: 0;
 	font-size: 12px;
 	font-style: italic;
+	color: var(--text-color-secondary);
 }
 
 .footnotes__wrapper figure img {
