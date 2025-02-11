@@ -1,15 +1,12 @@
 @import 'fonts.css';
 
 :root {
-	/* --primary-font: 'op3', sans-serif; */
 	--primary-font: 'Arial', sans-serif;
-	/* --light-font: 'op2', sans-serif; */
-	--light-font: 'Arial', sans-serif;
-	--alt-font: 'op1', sans-serif;
+
 	--menu-color: #464646;
 	--text-color: #662eff;
-	--text-color-secondary: rgb(177, 173, 182);
-	--accent-color: rgba(178, 174, 183, 0.5);
+	--text-color-secondary: #b2aeb7;
+	--accent-color: #b2aeb780;
 	color: var(--text-color);
 	cursor: default;
 	font-family: var(--primary-font);
@@ -90,6 +87,7 @@ img {
 
 .menu__wrapper a:hover {
 	color: var(--text-color-secondary);
+	cursor: pointer;
 }
 
 .menu__wrapper a:focus {
@@ -111,8 +109,7 @@ img {
 	margin: 0;
 }
 
-.menu--nav a.active,
-.nav__active {
+.menu--nav a.active {
 	color: var(--text-color);
 }
 
@@ -159,7 +156,6 @@ img {
 
 .main__wrapper,
 .main__projects {
-	cursor: ns-resize;
 	color: var(--text-color);
 	padding: 1rem 2vw 1rem 4vw;
 }

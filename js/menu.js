@@ -6,4 +6,5 @@ function menu(evt, projectName) {
   }
   
   evt.currentTarget.className += " active";
+  
 }
