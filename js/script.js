@@ -44,37 +44,6 @@ function pauseSong() {
 	Audio.pause();
 }
 
-// nextBtn.addEventListener("click", ()=>{
-//   nextSong();
-// });
-
-// prevBtn.addEventListener("click", ()=>{
-//   prevSong();
-// });
-
-// function nextSong(){
-//   index++;
-//   if(index > songs.length){
-//     index = 1;
-//   }
-//   else{
-//     index = index;
-//   }
-//   loadData(index);
-//   playSong();
-// }
-
-// function prevSong(){
-//   index--;
-//   if(index <= 0){
-//     index = songs.length;
-//   }
-//   else{
-//     index = index;
-//   }
-//   loadData(index);
-//   playSong();
-// }
 
 Audio.addEventListener('timeupdate', (e) => {
 	const initialTime = e.target.currentTime; // Get current music time
