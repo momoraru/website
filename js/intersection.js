@@ -21,8 +21,16 @@ $(document).ready(function () {
 				let currentId = section.attr('id');
 
 				// Remove 'active' class from all menu items, then add it to the current
-				menuItems.removeClass('active');
-				$('#nav a[href="#' + currentId + '"]').addClass('active');
+				menuItems.removeClass('active first-active');
+
+				// Get the current menu item
+				let currentMenuItem = $('#nav a[href="#' + currentId + '"]');
+				currentMenuItem.addClass('active');
+
+				// If it's the first menu item, apply a different class
+				if (menuItems.first().is(currentMenuItem)) {
+					currentMenuItem.addClass('first-active');
+				}
 			}
 		});
 	});
