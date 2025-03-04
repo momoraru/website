@@ -1,26 +1,29 @@
 // ------ menu waterfall scrolling interaction ----------
 
 $(document).ready(function () {
-	// Store each section's offset at the start
 	let sections = $('article');
 	let menuItems = $('.menu--nav a');
 
-	$(window).on('scroll', function () {
+	function handleScroll() {
+		if ($(window).width() < 780) {
+			// Disable scroll-based menu highlighting on mobile
+			menuItems.removeClass('active first-active');
+			return;
+		}
+
 		let scrollPos = $(window).scrollTop();
 
-		// Iterate over each project section to check its position
 		sections.each(function () {
 			let section = $(this);
-			let sectionTop = section.offset().top; // Adjust for any padding
+			let sectionTop = section.offset().top;
 
-			// Check if the current scroll position is in this section
 			if (
 				scrollPos >= sectionTop &&
 				scrollPos < sectionTop + section.outerHeight()
 			) {
 				let currentId = section.attr('id');
 
-				// Remove 'active' class from all menu items, then add it to the current
+				// Remove previous active states
 				menuItems.removeClass('active first-active');
 
 				// Get the current menu item
@@ -33,5 +36,32 @@ $(document).ready(function () {
 				}
 			}
 		});
+	}
+
+	function handleMobileMenu() {
+		if ($(window).width() < 780) {
+			menuItems.off('click').on('click', function () {
+				// Remove active class from all menu items
+				menuItems.removeClass('active');
+
+				// Immediately add the active class to the clicked item
+				$(this).addClass('active');
+
+				// Allow default behavior (smooth scrolling to section)
+			});
+		} else {
+			menuItems.off('click'); // Remove mobile click event on larger screens
+		}
+	}
+
+	// Initialize functions
+	handleScroll();
+	handleMobileMenu();
+
+	// Listen for scroll and resize events
+	$(window).on('scroll', handleScroll);
+	$(window).on('resize', function () {
+		handleScroll();
+		handleMobileMenu();
 	});
 });

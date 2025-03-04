@@ -519,4 +519,8 @@ p {
 	img {
 		filter: invert(0);
 	}
+
+	.mobile-active{
+		color: var(--accent-color);
+	}
 }
