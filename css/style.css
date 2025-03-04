@@ -414,6 +414,7 @@ h2 {
 		background-color: white;
 		z-index: 100;
 		position: fixed;
+		top: 0;
 	}
 
 	.menu--title,
