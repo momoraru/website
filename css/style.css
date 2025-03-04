@@ -1,8 +1,7 @@
 @import 'fonts.css';
 
 :root {
-	--primary-font: 'Arial', sans-serif;
-
+	--primary-font: 'Op1', sans-serif;
 	--menu-color: #464646;
 	--text-color: #662eff;
 	--text-color-secondary: #b2aeb7;
@@ -110,8 +109,13 @@ img {
 }
 
 .menu--nav a.active {
+	color: var(--accent-color);
+}
+
+.menu--nav a.first-active {
 	color: var(--text-color);
 }
+
 
 .menu--nav a {
 	list-style: none;
