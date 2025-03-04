@@ -407,7 +407,7 @@ h2 {
 	.menu__wrapper {
 		border-right: 0;
 		border-bottom: 2px solid var(--accent-color);
-		height: fit-content;
+		height: auto;
 		padding: 1rem 1rem 2rem 1rem;
 		display: grid;
 		grid-template-columns: 50% 50%;
